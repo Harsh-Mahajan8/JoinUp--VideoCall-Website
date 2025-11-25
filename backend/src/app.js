@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 import express from "express";
 import { createServer } from "node:http";
 import { status } from "http-status";
@@ -27,7 +29,7 @@ app.use(express.urlencoded({ limit: "40kb", extended: true }));
 app.use("/api/v1/user", userRoutes);
 
 const start = async () => {
-  const connectionDB = await mongoose.connect("mongodb+srv://videocall:videocall@videocall.jimer4z.mongodb.net/?retryWrites=true&w=majority&appName=videocall");
+  const connectionDB = await mongoose.connect(process.env.MONGO_URL);
   console.log(`Mongo is connection with host: ${connectionDB.connection.host}`)
   server.listen(port, () => {
     console.log("Server is working on port", port);
