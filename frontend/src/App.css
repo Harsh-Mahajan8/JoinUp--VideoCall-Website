@@ -1,0 +1,164 @@
+@import "tailwindcss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landingContainer {
+  width: 100%;
+  height: 100vh;
+  background: url("../background.png");
+  background-size: cover;
+  color: white;
+  font-family: sans-serif;
+}
+
+.landingContainer nav {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navHeader {
+  font-size: 2.72rem;
+  display: flex;
+  align-items: center;
+}
+
+.landingContainer nav .navLink {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+  font-size: 0.81rem;
+}
+
+.mainIcon {
+  height: 6rem;
+  margin: 0 1rem;
+}
+
+.navLink {
+  font-size: 1.3rem !important;
+}
+
+.navLink h2 {
+  padding: 0.31rem 0 0 0;
+}
+
+.button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff9839;
+  padding: 7px 2.8rem;
+  border-radius: 0.4rem;
+  display: inline;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.button:hover {
+  transform: scale(1.016);
+}
+
+.mainLC {
+  display: flex;
+  padding-inline: 3rem;
+  height: 60vh;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.main-right img {
+  height: 30rem;
+}
+
+.authcontainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: url("../background.png");
+  align-content: center;
+  z-index: 2;
+  background-size: cover;
+  padding: 5rem;
+}
+
+.authcontainer .top {
+  display: flex;
+  justify-content: center;
+}
+
+.authcontainer form {
+  background: linear-gradient(to right, #000000, #2d174f);
+  color: #fff;
+  font-size: 1.3rem;
+  z-index: 1;
+  justify-content: center;
+  padding: 2rem;
+  margin: auto;
+  border: 1px solid #747474;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 15px #dfa3ff;
+}
+
+.authcontainer .input {
+  display: flex;
+  flex-wrap: wrap;
+}
+.authcontainer label {
+  margin-right: 1rem;
+  margin-bottom: .2rem;
+}
+.authcontainer input {
+  border: 1.6px solid #fff !important;
+  border-radius: 0.61rem;
+  padding: 0.11rem 0.5rem;
+  margin-right: 2rem;
+}
+.authcontainer .input div {
+  display: flex;
+  flex-direction: column;
+}
+
+.authcontainer .authBtn {
+  margin: 2rem 0 0 0;
+  display: grid;
+  justify-self: center;
+  cursor: pointer;
+}
+
+.authcontainer .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.authcontainer .top .center{
+  display: flex;
+}
+.authcontainer .top .right{
+  margin-bottom: 4rem;
+}
+.authcontainer .btn {
+  /* background-color: #ffc187; */
+  padding: 0.31rem 0.7rem;
+  border-radius: 0.3rem;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  opacity: .9;
+}
+.activate {
+  background-color: #ff9839;
+  padding: 0.31rem 0.7rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.41rem;
+}
+.authHeadBtns{
+  display: flex;
+  justify-content: center;
+}
